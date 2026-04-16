@@ -6,6 +6,14 @@ function sortear(){
     let sorteados = [];
     let numero;
 
+    if (de > ate){
+        alert('O número escolhido no campo "Do número" é superior ao do campo "Até o número", porfavor escolha outro número');
+        document.getElementById('de').value = '';
+        return;
+    } else {
+
+    }
+
     for (let i = 0;i < quantidade;i++) {
         numero = obterNumeroAleatorio(de, ate);
 
@@ -40,6 +48,6 @@ function reiniciar(){
     document.getElementById('quantidade').value = '';
     document.getElementById('de').value = '';
     document.getElementById('ate').value = '';
-    document.getElementById('resultado').innerHTML =  '<label class="texto__paragrafo">Números sorteados:  nenhum até agora</label>'
+    document.getElementById('resultado').innerHTML =  '<label class="texto__paragrafo">Números sorteados:  nenhum até agora</label>';
     alterarStatusBotao();
 }
