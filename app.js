@@ -12,12 +12,14 @@ function sortear(){
         return;
     } else {
 
+    }
+
     if (quantidade > ((ate + 1) - de)) {
         alert('A quantidade selecionada excede os números disponíveis no intervalo definido.');
         document.getElementById('quantidade').value = '';
         return;
-    }
-
+    } else {
+        
     }
 
     for (let i = 0;i < quantidade;i++) {
